@@ -2,9 +2,11 @@
   "name": "w1d1-html",
   "version": "1.0.0",
   "scripts": {
-    "dev": "live-server ."
+    "dev": "live-server .",
+    "sass": "sass --watch src/styles:dist/styles dist/styles/style.css"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "sass": "^1.97.3"
   }
 }

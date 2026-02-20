@@ -5,55 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="dist/css/style.css">
-  <title>Travel Japan</title>
+  <title>Travel Japan - Home</title>
 </head>
 
-<body>
-  <h1>Tatsuya Yokokura</h1>
-
-  <header>
-    <p>Welcome to my first HTML page!</p>
+<body class="home-page">
+  <!-- Header (Transparent) -->
+  <header class="site-header transparent">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">&#9961;</span>
+        <span class="logo-text">Travel Japan</span>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="spots.html" class="nav-link">Spots</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Hi! My name is Tatsuya Yokokura. I am studying web development and improving
-        my skills every day.
-      </p>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>Git / GitHub</li>
-        <li>SQL</li>
-        <li>UI/UX Design</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Goals</h2>
-      <ol>
-        <li>Become a professional web developer</li>
-        <li>Build a portfolio website</li>
-        <li>Get a job in Canada</li>
-      </ol>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Tatsuya Yokokura</p>
-  </footer>
+  <!-- Full Screen Hero -->
+  <section class="hero-fullscreen">
+    <div class="hero-content">
+      <h1>Discover the Beauty of Japan</h1>
+      <p>From ancient temples to neon-lit streets, Japan offers a journey like no other</p>
+    </div>
+  </section>
 </body>
 
 </html>

@@ -19,3 +19,14 @@
     @content;
   }
 }
+
+@mixin placeholder-image($height: 12rem) {
+  background-color: $color-placeholder;
+  height: $height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-text-light;
+  font-size: $text-size-sm;
+  border-radius: $border-radius;
+}

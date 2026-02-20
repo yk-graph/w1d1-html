@@ -2,7 +2,7 @@
   "name": "w1d1-html",
   "version": "1.0.0",
   "scripts": {
-    "dev": "live-server .",
+    "start": "live-server .",
     "sass": "sass src/scss/style.scss dist/css/style.css",
     "sass:watch": "sass --watch src/scss/style.scss dist/css/style.css"
   },

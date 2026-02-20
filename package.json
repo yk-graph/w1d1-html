@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "live-server .",
-    "sass": "sass --watch src/styles:dist/styles dist/styles/style.css"
+    "sass": "sass src/scss/style.scss dist/css/style.css",
+    "sass:watch": "sass --watch src/scss/style.scss dist/css/style.css"
   },
   "devDependencies": {
     "live-server": "^1.2.2",

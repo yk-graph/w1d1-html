@@ -1,0 +1,64 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'reset';
+
+h1 {
+  text-align: center;
+  font-size: $text-size-h1;
+  color: $color-primary;
+  padding: $spacing-2xl $spacing-md $spacing-md;
+}
+
+header {
+  text-align: center;
+  margin-bottom: $spacing-2xl;
+
+  p {
+    font-size: $text-size-lg;
+    color: $color-text-light;
+  }
+}
+
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md $spacing-3xl;
+}
+
+section {
+  @include card;
+
+  h2 {
+    font-size: $text-size-h2;
+    color: $color-primary;
+    margin-bottom: $spacing-md;
+    padding-bottom: $spacing-sm;
+    border-bottom: 2px solid $color-secondary;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  ul,
+  ol {
+    padding-left: $spacing-md;
+
+    li {
+      padding: $spacing-sm 0;
+      font-size: $text-size-base;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-border;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $color-footer-bg;
+  color: $color-footer-text;
+  text-align: center;
+  padding: $spacing-lg;
+  font-size: $text-size-sm;
+}

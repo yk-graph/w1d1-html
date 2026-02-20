@@ -9,7 +9,7 @@
   position: relative;
 
   &.transparent {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -18,20 +18,20 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     .logo .logo-text {
-      color: $color-primary;
+      color: $color-white;
     }
 
     .nav-list li a {
-      color: $color-text;
+      color: rgba(255, 255, 255, 0.9);
     }
 
     .nav-link {
       &:hover {
-        color: $color-primary;
+        color: $color-white;
       }
 
       &.active {
-        color: $color-primary;
+        color: $color-white;
       }
     }
   }
@@ -115,8 +115,7 @@
     padding: $spacing-xl;
 
     h1 {
-      font-size: calc($text-size-h1 * 2);
-      margin-bottom: $spacing-lg;
+      font-size: $text-size-h1;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     }
 
@@ -130,7 +129,7 @@
 main {
   max-width: $max-width-xl;
   margin: 0 auto;
-  padding: $spacing-xl $spacing-md $spacing-3xl;
+  padding: $spacing-xl $spacing-md;
 }
 
 .about-page main {
@@ -144,7 +143,6 @@ main {
   h1 {
     font-size: $text-size-h1;
     color: $color-primary;
-    margin-bottom: $spacing-sm;
 
     + p {
       font-size: $text-size-lg;
@@ -222,12 +220,11 @@ main {
 }
 
 section {
+  margin-bottom: $spacing-xl;
   h2 {
     font-size: $text-size-h2;
     color: $color-primary;
     margin-bottom: $spacing-md;
-    padding-bottom: $spacing-sm;
-    border-bottom: 2px solid $color-secondary;
 
     ~ p {
       color: $color-text;
@@ -236,7 +233,6 @@ section {
 
   p {
     line-height: 1.8;
-    margin-bottom: $spacing-md;
   }
 
   ul,
@@ -253,16 +249,6 @@ section {
       background-color: rgba(0, 0, 0, 0.02);
     }
   }
-}
-
-blockquote {
-  border-left: 4px solid $color-secondary;
-  padding: $spacing-md $spacing-lg;
-  margin: $spacing-lg 0;
-  font-style: italic;
-  color: $color-text-light;
-  background-color: rgba(231, 76, 60, 0.05);
-  border-radius: 0 $border-radius $border-radius 0;
 }
 
 .profile-image {
@@ -313,5 +299,4 @@ blockquote {
   text-align: center;
   padding: $spacing-lg;
   font-size: $text-size-sm;
-  margin-top: $spacing-3xl;
 }
